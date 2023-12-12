@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ozon</title>
+    <link href="style/normalize.css" rel="stylesheet" />
+    <link href="style/index.css" rel="stylesheet" />
+    <link href="progress/progress.css" rel="stylesheet" />
+    <script defer src="progress/progress.js"></script>
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="prog">
+        <h3>Progress</h3>
+        <div class="prog__body">
+          <div class="prog__visual" id="progress"></div>
+          <div class="prog__controls controls">
+            <div class="controls__item controls__item-value">
+              <input min="0" max="100" type="number" id="switch-value" name="prog_value" value="60">
+              <label for="switch-value">Value</label>
+            </div>
+            <div class="controls__item">
+              <input type="checkbox" id="switch-anim" name="prog_animate">
+              <label for="switch-anim">Animate</label>
+            </div>
+            <div class="controls__item">
+              <input type="checkbox" id="switch-hide" name="prog_hide">
+              <label for="switch-hide">Hide</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
